@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<policies_definition>
+
+    <policy name="sensors"/>
+    <policy name="location"/>
+
+    <rules apply="all">
+        <expressions>
+            <expression name="timezone" format="plain"/>
+            <expression name="geo_area" format="plain"/>
+            <expression name="timeframe" format="expression" value="timeframe=[1-9][1-9]*"/>
+        </expressions>
+        <operators>
+            <operator name="and" value="and"/>
+            <operator name="or" value="or"/>
+        </operators>
+    </rules>
+
+</policies_definition>
